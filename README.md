@@ -1,6 +1,6 @@
-# Phaser 3 TypeScript Project Template
+# Electron Phaser 3 TypeScript Webpack Project
 
-This quick-start project template combines Phaser 3.50 with [TypeScript 4](https://www.typescriptlang.org/) and uses webpack for bundling.
+This quick-start project template combines Phaser 3.50 with [TypeScript 4](https://www.typescriptlang.org/) and [Electron](https://github.com/electron/electron#readme) 19.0.4 and uses webpack for bundling.
 
 ## Requirements
 
