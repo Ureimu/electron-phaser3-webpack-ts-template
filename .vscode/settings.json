@@ -1,0 +1,65 @@
+{
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "boundary",
+    "files.encoding": "utf8",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "search.exclude": {
+        "_book/**": true,
+        ".rpt2_cache/**": true,
+        "dist/**": true,
+        "node_modules/**": true,
+        "typings/**": true,
+        "**/.nyc_output": true,
+        "**/coverage": true,
+        "build/**": true
+    },
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "cSpell.words": [
+        "acho",
+        "anims",
+        "binball",
+        "bodyparts",
+        "bodysetting",
+        "buble",
+        "Buildable",
+        "Coord",
+        "crzytrane",
+        "dont",
+        "estree",
+        "gameobjectup",
+        "Iclass",
+        "Ifun",
+        "Inte",
+        "lcov",
+        "mincut",
+        "nodent",
+        "nuker",
+        "Parens",
+        "pserver",
+        "Scorpior",
+        "screepers",
+        "toolbelt",
+        "Unlicense"
+    ],
+    "mochaExplorer.files": [
+        "dist/test-integration.bundle.js",
+        "dist/test-unit.bundle.js"
+    ],
+    "mochaExplorer.require": [
+        "ts-node/register",
+        "test/setup-node.js"
+    ],
+}

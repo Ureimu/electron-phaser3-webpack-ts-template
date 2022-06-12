@@ -1,0 +1,78 @@
+{
+    "name": "ball",
+    "version": "1.0.0",
+    "description": "ball",
+    "main": "dist/main.js",
+    "scripts": {
+        "watch": "cross-env NODE_ENV=development webpack --watch",
+        "start:forge": "electron-forge start",
+        "start": "electron .",
+        "pack": "cross-env NODE_ENV=development webpack",
+        "prebuild": "tsc && npm run lint",
+        "build": "cross-env NODE_ENV=production webpack",
+        "lint": "eslint src --ext .ts",
+        "lint:fix": "eslint src --ext .ts --fix",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "package:forge": "electron-forge package",
+        "make:forge": "npm run build && electron-forge make"
+    },
+    "author": "Ureium",
+    "license": "MIT",
+    "devDependencies": {
+        "html-webpack-plugin": "^5.5.0",
+        "@electron-forge/cli": "^6.0.0-beta.63",
+        "@electron-forge/maker-deb": "^6.0.0-beta.63",
+        "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+        "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+        "@electron-forge/maker-zip": "^6.0.0-beta.63",
+        "@types/lodash": "^4.14.182",
+        "@typescript-eslint/eslint-plugin": "^5.25.0",
+        "@typescript-eslint/parser": "^5.25.0",
+        "cross-env": "^7.0.3",
+        "electron": "^19.0.4",
+        "electron-connect": "^0.6.3",
+        "electron-squirrel-startup": "^1.0.0",
+        "eslint": "^8.16.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-typescript": "^2.7.1",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "file-loader": "^6.2.0",
+        "http-server": "^14.1.1",
+        "lodash": "^4.17.21",
+        "phaser": "^3.55.2",
+        "prettier": "^2.6.2",
+        "ts-loader": "^9.3.0",
+        "ts-node": "^10.8.1",
+        "typescript": "^4.6.3",
+        "webpack": "^5.73.0",
+        "webpack-cli": "^4.9.2"
+    },
+    "config": {
+        "forge": {
+            "packagerConfig": {},
+            "makers": [
+                {
+                    "name": "@electron-forge/maker-squirrel",
+                    "config": {
+                        "name": "ball"
+                    }
+                },
+                {
+                    "name": "@electron-forge/maker-zip",
+                    "platforms": [
+                        "darwin"
+                    ]
+                },
+                {
+                    "name": "@electron-forge/maker-deb",
+                    "config": {}
+                },
+                {
+                    "name": "@electron-forge/maker-rpm",
+                    "config": {}
+                }
+            ]
+        }
+    }
+}

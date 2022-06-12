@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "module": "es6",
+        "noEmit": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "sourceMap": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@@/*": [
+                "./*"
+            ],
+            "@assets/*": [
+                "src/renderer/assets/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*",
+        "assets/**/*",
+        "webpack.config.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "ts-node": {
+        "compilerOptions": {
+            "esModuleInterop": true,
+            "target": "ESNext",
+            "module": "commonjs",
+        }
+    }
+}
