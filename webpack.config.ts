@@ -131,7 +131,7 @@ const renderer = merge(common, {
     module: {
         rules: [
             {
-                test: /\.(png|woff|woff2|eot|ttf|svg|fnt)$/,
+                test: /\.(png|woff|woff2|eot|ttf|svg|fnt|mp3|wav|flac|ogg|m4a|oga)$/,
                 loader: "file-loader"
             }
         ]
